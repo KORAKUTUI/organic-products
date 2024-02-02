@@ -1,0 +1,72 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up for Your Organic Website</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sign Up for Your Account</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li>><a href="signup.html"sign up</li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Sign Up Form</h2>
+
+        <form id="signupForm" action="#" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <button type="button" onclick="signup()">Sign Up</button>
+        </form>
+
+        <div id="signupMessage"></div>
+    </section>
+
+
+
+    <script>
+        function signup() {
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+            var signupMessage = document.getElementById("signupMessage");
+
+            
+            if (password !== confirmPassword) {
+                signupMessage.innerHTML = "Passwords do not match. Please try again.";
+            } else {
+                
+                signupMessage.innerHTML = "Sign up successful! Welcome, " + username + "!";
+                
+            }
+        }
+    </script>
+
+</body>
+</html>

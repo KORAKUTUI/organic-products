@@ -1,0 +1,21 @@
+body{
+    font-family:'arial',sans-serif;
+    margin:10;
+    padding:10;
+    background-color:orchid;    
+    
+}
+img{
+    width:200px;
+    height:500px;
+    margin:30px;   
+}
+header{
+    background-color:burlywood;
+    color:black;
+    padding:1em;
+    text-align:center;
+    
+}
+
+

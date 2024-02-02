@@ -1,0 +1,62 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Your Organic Website</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Login to Your Account</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">login</a></li>
+            <li><a href="signup.html">sign up</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Login Form</h2>
+
+        <form id="loginForm" action="#" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" onclick="login()">Login</button>
+        </form>
+
+        <div id="loginMessage"></div>
+    </section>
+
+
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var loginMessage = document.getElementById("loginMessage");
+
+            
+            if (username === "demo" && password === "demo123") {
+                loginMessage.innerHTML = "Login successful!";
+                
+            } else {
+                loginMessage.innerHTML = "Invalid username or password. Please try again.";
+            }
+        }
+    </script>
+
+</body>
+</html>

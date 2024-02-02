@@ -1,0 +1,90 @@
+
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Organic Products</title>
+    <style>
+        
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        article {
+            flex: 1 1 300px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Explore Our Organic Products</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">login</a></li>
+            <li><a href="signup.html">sign up</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <article>
+            <img src="https://s.abcnews.com/images/GMA/organic-produce-01-sh-iwb-220810_1660138683424_hpMain_16x9_992.jpg" alt="Organic Fruit">
+            <img src="https://5.imimg.com/data5/ANDROID/Default/2022/12/OK/TC/TD/39059598/product-jpeg-500x500.jpg"alt="organic fruit">
+            <h3>Organic Fruits and Vegetables</h3>
+            <p>Discover a wide variety of fresh, locally sourced organic fruits and vegetables. Our selection is grown with care to provide you with the best quality produce.</p>
+            <button onclick="addToCart('Organic Fruits and Vegetables')">Add to Cart</button>
+        </article>
+
+        <article>
+            <img src="https://www.greenecodream.com/cdn/shop/articles/Untitled_design_aab70819-d8be-4bbf-ae02-985c6e44d4a0_720x.jpg?v=1676664006" alt="Eco-friendly Items">
+            <img src="https://cdn.shopify.com/s/files/1/0070/7032/files/blank_tote_merch_swag_fashion_print_on_demand.jpg?v=1689965049" alt="eco-freiendly items">
+            <h3>Eco-friendly Household Items</h3>
+            <p>Explore our range of eco-friendly household items, from reusable bags to sustainable cleaning products. Make environmentally conscious choices for your home.</p>
+            <button onclick="addToCart('Eco-friendly Household Items')">Add to Cart</button>
+        </article>
+
+        <article>
+            <img src="https://media.allure.com/photos/5e9f44a64677ea0008ff4974/master/pass/reporter-wild-beauty-river.jpg" alt="Natural Skincare Products">
+            <img src="https://puresense.co.in/cdn/shop/articles/banner_5b7227e6-0a73-4d98-91a5-566990be212c.jpg?v=1651226202"alt="natural skin care products">
+            <h3>Natural Beauty and Skincare Products</h3>
+            <p>Pamper yourself with our selection of natural beauty and skincare products. From organic soaps to cruelty-free cosmetics, we prioritize your well-being.</p>
+            <button onclick="addToCart('Natural Beauty and Skincare Products')">Add to Cart</button>
+        </article>
+    </section>
+
+    
+
+    <script>
+        
+        function addToCart(productName) {
+            alert(productName + ' added to cart!');
+        
+        }
+    </script>
+
+</body>
+</html>
